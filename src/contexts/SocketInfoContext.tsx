@@ -16,7 +16,7 @@ type SocketInfoProviderProps = {
 }
 
 const SocketInfoProvider = ({ children }: SocketInfoProviderProps) => {
-    const socket:Socket = io('http://localhost:3000')
+    const socket:Socket = io('https://chatapp-backend-n9gh.onrender.com/')
     //http://localhost:3000
     //https://chatapp-backend-n9gh.onrender.com/
     const [user, setUser] = useState("")
