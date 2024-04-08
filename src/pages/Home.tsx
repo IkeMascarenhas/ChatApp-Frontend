@@ -25,7 +25,7 @@ const Home = ({ }: HomeProps) => {
     }
 
     return (
-        <main className="m-auto grid place-content-center w-[50vw] h-[100vh] relative">
+        <main className="m-auto grid place-content-center w-[100vw] h-[100vh] relative Home">
             <h1 className="text-2xl text-center mb-8">Login</h1>
             {error && 
             <div role="alert" className="alert alert-warning absolute top-14">
