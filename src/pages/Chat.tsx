@@ -3,11 +3,13 @@ import { useSocketInfo } from "../contexts/SocketInfoContext"
 import Message from "../components/Message"
 import chatMessages from "../types/chatMessages"
 import Header from "../components/Header"
+import { useNavigate } from "react-router-dom"
 
 const Chat = () => {
   const [message, setMessage] = useState("")
   const { socket, room, user } = useSocketInfo()
   const [chatMessages, setChatMessages] = useState<chatMessages[]>([])
+  const navigate = useNavigate()
 
   const handleSendMessage = () => {
     if(message.length > 0) {
@@ -18,7 +20,7 @@ const Chat = () => {
 
   useEffect(() => {
     if(user.length <= 0 || room.length <= 0){
-      window.location.replace('/')
+      navigate("/")
     }
 
     socket.on('receiveMessage', (usersInfo) => {
