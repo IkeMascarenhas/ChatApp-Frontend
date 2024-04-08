@@ -36,7 +36,7 @@ const Chat = () => {
   return (
     <>
     <Header/>
-    <main className="sm:max-w-[50vw] m-auto h-[100vh] relative w-[90vw]">
+    <main className="sm:max-w-[50vw] mx-auto h-[100vh] relative w-[90vw] mt-28">
       <section id="ChatApp">
         <ul className="mt-5 pb-28">
           {chatMessages.map((item: chatMessages, index) => (

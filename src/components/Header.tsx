@@ -9,7 +9,7 @@ const Header = () => {
     }
 
     return (
-        <header className="navbar bg-base-300">
+        <header className="navbar bg-base-300 fixed top-0 z-30">
             <div className="navbar-start">
                 <a className="btn btn-ghost text-xl">{room}</a>
             </div>
