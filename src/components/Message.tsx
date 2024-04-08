@@ -1,11 +1,9 @@
-import { useSocketInfo } from '../contexts/SocketInfoContext'
 import chatMessages from '../types/chatMessages'
 type MessageProps = chatMessages & {
     position: string,
 }
 
 const Message = ({ user, message, currentUser, admin, time }: MessageProps) => {
-    const { socket } = useSocketInfo();
 
     if (admin) return (
         <div className={"alert alert-info flex justify-center max-w-[80%] mx-auto my-3"}>
