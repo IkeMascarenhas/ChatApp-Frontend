@@ -20,7 +20,7 @@ const Chat = () => {
 
   useEffect(() => {
     if(user.length <= 0 || room.length <= 0){
-      navigate("/")
+      navigate("/home")
     }
 
     socket.on('receiveMessage', (usersInfo) => {
@@ -36,7 +36,7 @@ const Chat = () => {
   return (
     <>
     <Header/>
-    <main className="sm:max-w-[50vw] mx-auto h-[100vh] relative w-[90vw] mt-28">
+    <main className="sm:max-w-[50vw] mx-auto h-[100vh] relative w-[90vw] ">
       <section id="ChatApp">
         <ul className="mt-5 pb-28">
           {chatMessages.map((item: chatMessages, index) => (
