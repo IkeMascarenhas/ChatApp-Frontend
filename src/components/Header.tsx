@@ -14,7 +14,7 @@ const Header = () => {
                 <a className="btn btn-ghost text-xl">{room}</a>
             </div>
             <div className="navbar-end">
-                <Link className="btn btn-outline btn-sm" to={"/"} onClick={handleLeave}>Leave</Link>
+                <Link className="btn btn-outline btn-sm" to={"/"} onClick={handleLeave}>Sair</Link>
             </div>
         </header>
     )

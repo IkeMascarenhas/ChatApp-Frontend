@@ -55,7 +55,7 @@ const Chat = () => {
 
         <label className="flex w-[100%] justify-between gap-2 fixed InputMessage sm:max-w-[50vw]">
           <input type="text" className="input w-[80%]" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)}/>
-          <button onClick={handleSendMessage} className="btn w-[20%] text-base">Send</button>
+          <button onClick={handleSendMessage} className="btn w-[20%] text-base">Enviar</button>
         </label>
       </section>
     </main>
